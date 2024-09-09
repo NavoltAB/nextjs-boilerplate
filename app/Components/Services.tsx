@@ -14,12 +14,12 @@ export default function Services() {
         className="brightness-75 absolute h-full min-h-full object-cover w-full"
         quality={100}
       />
-      <div className="z-80 md:px-10 md:h-[50vh] w-full pb-[261px] py-6 px-4 md:py-10 top-0">
+      <div className="z-80 md:px-10  w-full pb-[261px] py-6 px-4 md:py-10 top-0">
         <h2 className="font-semibold text-center relative z-60 text-white uppercase mb-6 text-[28px] md:text-[42px]">
           Våra tjänster
         </h2>
-        <div className="flex md:flex-row flex-col z-60 gap-6 min-h-full items-center">
-          <div className="bg-black/30 w-4/5 md:px-10 flex flex-col gap-4 items-center px-4 py-4 md:py-10 rounded-xl backdrop-blur-lg md:w-2/3 z-40">
+        <div className="flex md:flex-row flex-col z-20 gap-6 min-h-full items-center">
+          <div className="bg-black/30 w-4/5 md:px-10 flex flex-col gap-4 items-center px-4 py-4 md:py-10 rounded-xl backdrop-blur-lg md:w-2/3 z-20">
             <div className=" border-white/60 border-2 rounded-full p-5">
               <Sailboat
                 stroke="white"
@@ -39,7 +39,7 @@ export default function Services() {
               </Button>
             </Link>
           </div>
-          <div className="bg-black/30 md:px-10 flex w-4/5 flex-col gap-4 items-center py-10 rounded-xl backdrop-blur-lg md:w-2/3 h-fit z-40">
+          <div className="bg-black/30 md:px-10 flex w-4/5 flex-col gap-4 items-center py-10 rounded-xl backdrop-blur-lg md:w-2/3 h-fit z-20">
             <div className=" border-white/60 border-2 rounded-full p-5">
               <Caravan
                 stroke="white"
