@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Services() {
   return (
-    <section className="relative min-h-[calc(100vh-99px)] w-full">
+    <section className="relative min-h-[calc(100vh-87px)] w-full">
       <Image
         objectFit="cover"
         src={ServicesImg}

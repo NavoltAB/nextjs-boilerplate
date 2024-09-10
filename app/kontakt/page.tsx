@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="min-h-[calc(100vh-70px)] bg-black flex flex-col items-center justify-center md:min-h-[calc(100vh-99px)]">
+    <section className="min-h-[calc(100vh-70px)] bg-black flex flex-col items-center justify-center md:min-h-[calc(100vh-87px)]">
       <div className="absolute inset-0 z-0">
         <Image
           src={KontaktImg}

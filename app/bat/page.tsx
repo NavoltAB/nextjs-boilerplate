@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Bat() {
   return (
-    <section className="min-h-[calc(100vh-70px)] flex flex-col items-center justify-center bg-black md:min-h-[calc(100vh-99px)]">
+    <section className="min-h-[calc(100vh-70px)] flex flex-col items-center justify-center bg-black md:min-h-[calc(100vh-87px)]">
       <div className="absolute inset-0 z-0">
         <Image
           src={BatImg}
