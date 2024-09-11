@@ -32,7 +32,7 @@ export default function Home() {
   };
   return (
     <section className="w-full h-full">
-      <div className="md:h-[calc(100vh-87px)] h-[calc(100vh-70px)]">
+      <div className="md:h-[calc(100vh-78px)] h-[calc(100vh-55px)]">
         <div className="absolute inset-0 z-0 bg-gray-800">
           <Image
             src={HeroImg}
@@ -48,7 +48,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative [&>*]:text-white gap-4 z-10 max-h-[calc(100vh-87px)] flex items-center md:items-start px-10 h-full flex-col justify-center">
+        <div className="relative [&>*]:text-white gap-4 z-10 max-h-[calc(100vh-78px)] flex items-center md:items-start px-10 h-full flex-col justify-center">
           <h1 className="text-[32px] md:text-[56px] text-center antialiased leading-[32px] md:leading-[56px] uppercase font-semibold">
             Vi löser elen ombord
           </h1>

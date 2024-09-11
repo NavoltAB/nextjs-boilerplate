@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <section className="flex bg-black absolute bottom-0 flex-col bg-opacity-50 backdrop-blur-lg h-[vh] gap-4 !z-40 md:px-6 py-4 justify-center md:py-6 w-full items-center">
+    <section className="flex bg-black absolute bottom-0 flex-col bg-opacity-50 backdrop-blur-lg  gap-4 !z-40 md:px-6 py-4 justify-center md:py-6 w-full items-center">
       <div className="flex flex-col justify-center w-full items-center">
-        <h1 className="leading-[32px]  text-white text-[32px] antialiased font-semibold uppercase">
+        <h1 className="leading-[26px]  text-white text-[26px] antialiased font-semibold uppercase">
           Navolt
         </h1>
-        <h3 className="text-[12px]  antialiased text-white uppercase">
+        <h3 className="text-[9px]  antialiased text-white uppercase">
           Marinelektronik
         </h3>
       </div>

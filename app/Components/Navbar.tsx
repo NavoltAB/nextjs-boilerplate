@@ -23,10 +23,10 @@ export default function Navbar() {
     <section className="flex bg-black  bg-opacity-50 backdrop-blur-lg sticky top-0 z-40 flex-row md:px-10 px-4 py-2 md:py-3 justify-between w-full items-center">
       <div className="flex flex-col items-center">
         <Link href="/" className="text-center">
-          <h1 className="md:leading-[42px] leading-[36px] text-white text-[36px] md:text-[42px] antialiased font-semibold uppercase">
+          <h1 className=" text-[24px] leading-[24px] md:leading-[36px] text-white md:text-[36px]  antialiased font-semibold uppercase">
             Navolt
           </h1>
-          <h3 className="md:text-[14px] text-[12px] antialiased text-white uppercase">
+          <h3 className=" text-[10px] md:text-[12px] antialiased text-white uppercase">
             Marinelektronik
           </h3>
         </Link>
