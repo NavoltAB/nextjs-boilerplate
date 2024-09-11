@@ -20,7 +20,7 @@ export default function Navbar() {
   ];
 
   return (
-    <section className="flex bg-black  bg-opacity-50 backdrop-blur-lg sticky top-0 z-40 flex-row md:px-10 px-4 py-2 md:py-3 justify-between w-full items-center">
+    <section className="flex bg-black  bg-opacity-50 backdrop-blur-lg sticky top-0 z-40 flex-row md:px-10 px-4 py-5 md:py-5 justify-between w-full items-center">
       <div className="flex flex-col items-center">
         <Link href="/" className="text-center">
           <h1 className=" text-[24px] leading-[24px] md:leading-[36px] text-white md:text-[36px]  antialiased font-semibold uppercase">

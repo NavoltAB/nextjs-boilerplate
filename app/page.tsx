@@ -22,7 +22,7 @@ export default function Home() {
 
     // On mobile, scroll by 100vh - 87px
     const scrollPosition = isMobile
-      ? windowHeight - 87 // 100vh minus 87px for mobile
+      ? windowHeight - 79 // 100vh minus 87px for mobile
       : document.documentElement.scrollHeight - windowHeight; // Original for desktop
 
     window.scrollTo({
@@ -32,7 +32,7 @@ export default function Home() {
   };
   return (
     <section className="w-full h-full">
-      <div className="md:h-[calc(100vh-78px)] h-[calc(100vh-55px)]">
+      <div className="md:h-[calc(100vh-94px)] h-[calc(100dvh-79px)]">
         <div className="absolute inset-0 z-0 bg-gray-800">
           <Image
             src={HeroImg}
