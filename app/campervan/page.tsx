@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Campervan() {
   return (
-    <section className="min-h-[calc(100vh-79px)] flex flex-col items-center bg-black justify-center md:min-h-[calc(100vh-94px)]">
+    <section className="min-h-[calc(100dvh-79px)] flex flex-col items-center bg-black justify-center md:min-h-[calc(100vh-94px)]">
       <div className="absolute inset-0 z-0">
         <Image
           src={CamperImg}
