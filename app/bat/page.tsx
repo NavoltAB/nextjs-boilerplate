@@ -5,7 +5,7 @@ export default function Bat() {
   return (
     <section className="min-h-[calc(100dvh-79px)] flex flex-col items-center justify-center bg-black md:min-h-[calc(100vh-94px)]">
       <div 
-        className="absolute inset-0 z-0 bg-[url('../public/img/Boat-Img.jpg')] bg-cover bg-bottom brightness-50"
+        className="absolute inset-0 z-0 bg-[url('../public/img/services.png')] bg-cover bg-bottom brightness-50"
         role="img"
         aria-label="landing-image"
       />

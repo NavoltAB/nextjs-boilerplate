@@ -3,6 +3,8 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ChatBubble from "./Components/ChatBubble";
+import { Analytics } from "@vercel/analytics/next";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -23,7 +25,9 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <ChatBubble />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

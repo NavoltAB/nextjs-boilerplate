@@ -5,6 +5,8 @@ import HeroImg from "../public/img/hero-img.jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Services from "./Components/Services";
+import Brands from "./Components/Brands";
+import Insta from "./Components/Insta";
 
 export default function Home() {
   const scrollToServices = () => {
@@ -27,9 +29,9 @@ export default function Home() {
             objectFit="cover"
             src={HeroImg}
             alt="hero-image"
-            className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full scale-x-[-1]"
+            className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full sm:scale-x-[-1] scale-x-100"
           />
-        <div className="relative [&>*]:text-white gap-4 z-10 max-h-[calc(100vh-78px)] flex items-center md:items-start px-10 h-full flex-col justify-center">
+        <div className="relative [&>*]:text-white gap-4 max-h-[calc(100vh-78px)] flex items-center md:items-start px-4 lg:px-10 h-full flex-col justify-center">
           <h1 className="text-[32px] md:text-[56px] text-center antialiased leading-[32px] md:leading-[56px] uppercase font-semibold">
             Vi löser elen ombord
           </h1>
@@ -54,6 +56,8 @@ export default function Home() {
         </div>
       </div>
       <Services />
+      <Insta />
+      <Brands />
     </section>
   );
 }
