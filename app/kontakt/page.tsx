@@ -6,16 +6,11 @@ import Link from "next/link";
 export default function Page() {
   return (
     <section className="min-h-[calc(100dvh-79px)] bg-black flex flex-col items-center justify-center md:min-h-[calc(100vh-94px)]">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={KontaktImg}
-          className="object-cover brightness-50 max-h-[100vh] object-right-bottom " // No scale on smaller screens
-          alt="landing-image"
-          fill
-          quality={100}
-          priority
-        />
-      </div>
+      <div 
+        className="absolute inset-0 z-0 bg-[url('../public/img/pexels-pixabay-275637.jpg')] bg-cover bg-right-bottom brightness-50"
+        role="img"
+        aria-label="landing-image"
+      />
       <div className="relative w-full mb-[250px] px-6 flex-col items-center py-10 gap-4 flex justify-center z-60">
         <h1 className="text-white md:text-[56px] text-center text-[36px] font-semibold uppercase">
           Kontakta oss

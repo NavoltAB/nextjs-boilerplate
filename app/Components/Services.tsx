@@ -12,7 +12,7 @@ export default function Services() {
         src={ServicesImg}
         alt="service-image"
         className="brightness-75 absolute h-full min-h-full object-cover w-full"
-        quality={100}
+    
       />
       <div className="z-80 md:px-10  w-full pb-[261px] py-6 px-4 md:py-10 top-0">
         <h2 className="font-semibold text-center relative z-60 text-white uppercase mb-6 text-[28px] md:text-[42px]">

@@ -1,21 +1,14 @@
 import { Button } from "@/components/ui/button";
-import CamperImg from "@/public/img/campervan-img.jpg";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Campervan() {
   return (
     <section className="min-h-[calc(100dvh-79px)] flex flex-col items-center bg-black justify-center md:min-h-[calc(100vh-94px)]">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={CamperImg}
-          className="object-cover w-screen h-full brightness-50 max-h-[100vh] " // No scale on smaller screens
-          alt="landing-image"
-          sizes="100vw"
-          quality={100}
-          priority
-        />
-      </div>
+      <div 
+        className="absolute inset-0 z-0 bg-[url('../public/img/campervan-img.jpg')] bg-cover bg-center brightness-50"
+        role="img"
+        aria-label="landing-image"
+      />
       <div className="relative w-full mb-[250px] flex-col items-center py-10 gap-4 flex justify-center z-60">
         <h1 className="text-white md:text-[56px] text-center text-[36px] font-semibold uppercase">
           Under konstruktion...

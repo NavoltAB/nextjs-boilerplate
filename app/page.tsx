@@ -5,49 +5,30 @@ import HeroImg from "../public/img/hero-img.jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Services from "./Components/Services";
-import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new window.Image();
-    img.onload = () => setImageLoaded(true);
-    img.src = HeroImg.src;
-  }, []);
-
   const scrollToServices = () => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768; // You can adjust this breakpoint as needed
-
-    // On mobile, scroll by 100vh - 87px
+    const isMobile = window.innerWidth <= 768;
     const scrollPosition = isMobile
-      ? windowHeight - 79 // 100vh minus 87px for mobile
-      : document.documentElement.scrollHeight - windowHeight; // Original for desktop
+      ? windowHeight - 79
+      : document.documentElement.scrollHeight - windowHeight;
 
     window.scrollTo({
       top: scrollPosition,
       behavior: "smooth",
     });
   };
+
   return (
     <section className="w-full h-full">
-      <div className="md:h-[calc(100vh-94px)] h-[calc(100dvh-79px)]">
-        <div className="absolute inset-0 z-0 bg-gray-800">
+      <div className="relative md:h-[calc(100vh-94px)] h-[calc(100dvh-79px)]">
           <Image
+            objectFit="cover"
             src={HeroImg}
-            className={`object-cover brightness-75 max-h-[100vh] object-left-bottom md:scale-x-neg-1 transition-opacity duration-300 ${
-              imageLoaded ? "opacity-100" : "opacity-0"
-            }`}
-            alt="landing-image"
-            fill
-            priority
-            placeholder="blur"
-            blurDataURL={HeroImg.blurDataURL}
-            onLoadingComplete={() => setImageLoaded(true)}
+            alt="hero-image"
+            className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full scale-x-[-1]"
           />
-        </div>
-
         <div className="relative [&>*]:text-white gap-4 z-10 max-h-[calc(100vh-78px)] flex items-center md:items-start px-10 h-full flex-col justify-center">
           <h1 className="text-[32px] md:text-[56px] text-center antialiased leading-[32px] md:leading-[56px] uppercase font-semibold">
             Vi löser elen ombord
