@@ -13,6 +13,8 @@ import SKYLLERMARKS from "@/public/icons/brands/SKYLLERMARKS.png";
 import SUTARS from "@/public/icons/brands/SUTARS.png";
 import TELTONIKA from "@/public/icons/brands/TELTONIKA.png";
 import VICTRON from "@/public/icons/brands/VICTRON ENERGY.png";
+import ISOTEMP from "@/public/icons/brands/Isotemp.png";
+import ISOTHERM from "@/public/icons/brands/Isotherm.png";
 
 const brands = [
     { name: "B&G", logo: BG },
@@ -21,6 +23,8 @@ const brands = [
     { name: "Dometic", logo: DOMETIC },
     { name: "Eberspächer", logo: EBERSPACHER },
     { name: "Garmin", logo: GARMIN },
+    { name: "Isotemp", logo: ISOTEMP },
+    { name: "Isotherm", logo: ISOTHERM },
     { name: "Lowrance", logo: LOWRANCE },
     { name: "Nexa", logo: NEXA },
     { name: "Raymarine", logo: RAYMARINE },
@@ -34,7 +38,7 @@ const brands = [
 export default function Brands() {
     return (
         <section className="py-16 mb-[8rem] px-4 md:px-10">
-            <h2 className="text-2xl md:text-4xl font-semibold text-center uppercase mb-12">Våra varumärken</h2>
+            <h4 className="text-2xl md:text-4xl font-semibold text-center uppercase mb-12">Våra varumärken</h4>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
                 {brands.map((brand) => (
                     <div key={brand.name} className="w-full max-w-[200px] h-[100px] relative flex items-center justify-center">

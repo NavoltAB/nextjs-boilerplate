@@ -40,18 +40,28 @@ export default function Home() {
             elektronik i din fritidsbåt, husbil eller campervan.
           </p>
           <div className="flex md:flex-row flex-col items-center pt-4 gap-4">
-            <Link href="/kontakt">
+            <Link href="/bat">
               <Button className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full">
-                Kontakt
+                Båt
               </Button>
             </Link>
 
-            <Button
-              className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full"
-              onClick={scrollToServices}
+            <Link href="/campervan">
+              <Button
+                className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full"
+            
             >
-              Våra tjänster
-            </Button>
+              Campervan
+              </Button>
+            </Link>
+            <Link href="/batrutor">
+              <Button
+                className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full"
+            
+            >
+                Båtrutor
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

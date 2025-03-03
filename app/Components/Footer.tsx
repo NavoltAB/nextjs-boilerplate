@@ -9,11 +9,7 @@ export default function Footer() {
           Marinelektronik
         </h3>
       </div>
-      <div className="!text-white md:mt-auto flex flex-col md:flex-row md:w-4/5 justify-end h-fit  md:justify-between text-center md:items-end">
-        <p className="md:text-xs antialiased text-[12px]">
-          Postadress: Kapellevägen 15B
-        </p>
-        <p className="md:text-xs antialiased text-[12px]">451 44 Uddevalla</p>
+      <div className="!text-white md:mt-auto flex flex-col md:flex-row md:w-4/5 justify-end h-fit  md:justify-center md:gap-8 text-center md:items-end">
         <p className="md:text-xs antialiased text-[12px]">
           Org. nummer: 559475-1876
         </p>
