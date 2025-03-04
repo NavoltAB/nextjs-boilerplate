@@ -15,6 +15,7 @@ export default function Navbar() {
   const menuItems = [
     { text: "Hem", link: "/" },
     { text: "Båt", link: "/bat" },
+    { text: "Båtrutor", link: "/batrutor" },
     { text: "Campervan", link: "/campervan" },
     { text: "Kontakt", link: "/kontakt" },
   ];

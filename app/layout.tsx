@@ -23,9 +23,11 @@ export default function RootLayout({
       <body
         className={`${openSans.className} relative flex flex-col justify-between h-full`}
       >
+        <div className="mb-[112px]">
         <Navbar />
         {children}
         <ChatBubble />
+        </div>
         <Footer />
         <Analytics />
       </body>

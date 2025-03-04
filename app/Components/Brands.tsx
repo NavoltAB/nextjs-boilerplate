@@ -37,7 +37,7 @@ const brands = [
 
 export default function Brands() {
     return (
-        <section className="py-16 mb-[8rem] px-4 md:px-10">
+        <section className="py-16  px-4 md:px-10">
             <h4 className="text-2xl md:text-4xl font-semibold text-center uppercase mb-12">Våra varumärken</h4>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
                 {brands.map((brand) => (
