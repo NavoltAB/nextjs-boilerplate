@@ -15,7 +15,11 @@ import TELTONIKA from "@/public/icons/brands/TELTONIKA.png";
 import VICTRON from "@/public/icons/brands/VICTRON ENERGY.png";
 import ISOTEMP from "@/public/icons/brands/Isotemp.png";
 import ISOTHERM from "@/public/icons/brands/Isotherm.png";
-
+import SIKA from "@/public/icons/brands/Sika.png";
+import FUSION from "@/public/icons/brands/Fusion.png";
+import MASTERVOLT from "@/public/icons/brands/Mastervolt.png";
+import NORDMAX from "@/public/icons/brands/Nordmax.png";
+import RENOGY from "@/public/icons/brands/Renogy.png";
 const brands = [
     { name: "B&G", logo: BG },
     { name: "BEP", logo: BEP },
@@ -32,7 +36,12 @@ const brands = [
     { name: "Skyllermarks", logo: SKYLLERMARKS },
     { name: "Sutars", logo: SUTARS },
     { name: "Teltonika", logo: TELTONIKA },
-    { name: "Victron Energy", logo: VICTRON }
+    { name: "Victron Energy", logo: VICTRON },
+    { name: "Sika", logo: SIKA },
+    { name: "Fusion", logo: FUSION },
+    { name: "Mastervolt", logo: MASTERVOLT },
+    { name: "Nordmax", logo: NORDMAX },
+    { name: "Renogy", logo: RENOGY },
 ];
 
 export default function Brands() {

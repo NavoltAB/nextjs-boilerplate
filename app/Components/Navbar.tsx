@@ -15,8 +15,9 @@ export default function Navbar() {
   const menuItems = [
     { text: "Hem", link: "/" },
     { text: "Båt", link: "/bat" },
-    { text: "Båtrutor", link: "/batrutor" },
     { text: "Campervan", link: "/campervan" },
+    { text: "Båtrutor", link: "/batrutor" },
+    { text: "Galleri", link: "/galleri" },
     { text: "Kontakt", link: "/kontakt" },
   ];
 
@@ -38,7 +39,7 @@ export default function Navbar() {
           <Link
             key={index}
             href={item.link}
-            className="text-white text-[18px] antialiased uppercase hover:text-gray-400"
+            className="text-white text-[18px] antialiased  hover:text-gray-400"
           >
             {item.text}
           </Link>

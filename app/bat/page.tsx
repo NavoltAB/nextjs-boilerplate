@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BatteryFull, Cctv, Fan, MapPinned, MessageCircleQuestion, Sun, Wifi, Wrench } from "lucide-react";
+import { BatteryFull, Cable, Cctv, Fan, MapPinned, MessageCircleQuestion, Sun, Wifi, Wrench } from "lucide-react";
 import Link from "next/link";
 
 export default function Bat() {
@@ -36,13 +36,18 @@ export default function Bat() {
       icon: <Wifi className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
+      heading: "Kopplingsschema",
+      text: "Vi skapar ett detaljerat kopplingsschema anpassat specifikt för dina komponenter.",
+      icon: <Cable className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
       heading: "Konsultation",
       text: "Vill du göra jobbet själv? Vi hjälper dig med frågor och funderingar!",
       icon: <MessageCircleQuestion className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
       heading: "Systemdesign",
-      text: "Vi hjälper dig att designa ditt elsystem från grunden. Vi tar hänsyn till dina behov och budget.",
+      text: "Vi hjälper dig att designa ditt elsystem från grunden, anpassat efter dina förutsättningar, behov och önskemål.",
       icon: <Wrench className="w-8 h-8" strokeWidth={1.25}/>
     }
   ];
@@ -54,7 +59,8 @@ export default function Bat() {
         aria-label="landing-image"
       />
       <div className="relative w-full ] flex-col items-center py-10 gap-4 flex justify-center z-60">
-     <h1 className="text-white text-center  lg:text-[32px] px-10 text-[24px]  font-semibold uppercase"> Vi hjälper dig med allt från installation av en ny plotter till uppgradering av hela elsystemet ombord.  </h1>
+     <h1 className="text-white text-center  lg:text-[32px] px-10 text-[24px]  font-semibold uppercase">Vi löser elen ombord</h1>
+     <p className="text-white text-center  lg:text-[18px] px-10 text-[14px]  font-semibold">Vi hjälper dig med allt från installation av en ny plotter till uppgradering av hela elsystemet ombord</p>
       </div>
       <div className="relative w-full flex-col bg-black lg:p-6 p-4 bg-opacity-50 backdrop-blur-sm py-6 gap-4 flex justify-center z-60">
         {texts.map((text, index) => (
@@ -67,7 +73,7 @@ export default function Bat() {
           </div>
         ))}
       </div>
-      <div className="relative flex items-center justify-center z-[70] lg:mt-8 mt-4">
+      <div className="relative flex items-center mb-14 justify-center z-[70] lg:mt-8 mt-4">
         <Link href="/kontakt">
           <Button   className=" py-4 mb-4 px-8  hover:bg-white hover:scale-[1.02] text-black text-sm  uppercase font-bold bg-white rounded-full">Kontakta oss</Button>
         </Link>

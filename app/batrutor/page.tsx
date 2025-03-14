@@ -4,32 +4,33 @@ import Image from "next/image";
 import Img1 from "@/public/img/batrutor/batrutor-1.jpg";
 import Img2 from "@/public/img/batrutor/batrutor-2.jpg";
 import Img3 from "@/public/img/batrutor/batrutor-3.jpg";
+import { Dialog, DialogTitle, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Batrutor() {
   const texts = [
     {
-      heading: "Maxi 95",
-      text: "7 890:- Sidorutor i polykarbonat UV Bronze 130, 6mm. 4+4 st enl. mått: 1155x224 mm, 1070x270 mm, 807x265 mm, 829x143 mm. Monteringspaket: 2 590:-",
+      heading: "Maxi 95 - 7 890:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 4+4 st enl. mått: 1155x224 mm, 1070x270 mm, 807x265 mm, 829x143 mm.\nMonteringspaket: 2 590:-",
     },
     {
-      heading: "Maxi 87",
-      text: "5 290:- Sidorutor i polykarbonat UV Bronze 130, 6mm. 2+2 st enl. mått: 1063x252 mm, 1069x229 mm. Monteringspaket: 2 250:-",
+      heading: "Maxi 87 - 5 290:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 2+2 st enl. mått: 1063x252 mm, 1069x229 mm.\nMonteringspaket: 2 250:-",
     },
     {
-      heading: "Maxi 84",
-      text: "5 290:- Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1972x253 mm. Monteringspaket: 1 990:-",
+      heading: "Maxi 84 - 5 290:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1972x253 mm.\nMonteringspaket: 1 990:-",
     },
     {
-      heading: "Maxi 77",
-      text: "5 290:- Sidorutor i polykarbonat UV Bronze 130, 6mm. Alternativ 1: 1+1 st enl. mått: 1962x240 mm. Alternativ 2: 2+2 st enl. mått: 1096x235 mm, 819x215 mm. Monteringspaket: 1 990:-",
+      heading: "Maxi 77 - 5 290:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. Alternativ 1: 1+1 st enl. mått: 1962x240 mm. Alternativ 2: 2+2 st enl. mått: 1096x235 mm, 819x215 mm.\nMonteringspaket: 1 990:-",
     },
     {
-      heading: "Maxi 68",
-      text: "4 090:- Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1464x215 mm. Monteringspaket: 1 990:-",
+      heading: "Maxi 68 - 4 090:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1464x215 mm.\nMonteringspaket: 1 990:-",
     },
     {
-      heading: "Maxi Fenix",
-      text: "4 190:- Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1363x262 mm. Monteringspaket: 1 990:-",
+      heading: "Maxi Fenix - 4 190:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1363x262 mm.\nMonteringspaket: 1 990:-",
     },
   ];
 
@@ -53,16 +54,16 @@ export default function Batrutor() {
 
   const otherItems = [
     {
-      heading: "Gebo-däckslucka",
-      text: "2 190:- Däckslucka i polykarbonat UV Bronze 130, 10mm. Mått: 500x500 mm. Monteringspaket: 1 390:- (för däckslucka med glaslist i gummi) - Sikasil SG-20 Svart, 300ML - Tätningslist - Glaslist",
+      heading: "Gebo-däckslucka - 2 190:-",
+      text: "Däckslucka i polykarbonat UV Bronze 130, 10mm. Mått: 500x500 mm.\nMonteringspaket: 1 390:- (för däckslucka med glaslist i gummi)\n- Sikasil SG-20 Svart, 300ML\n- Tätningslist\n- Glaslist",
     },
     {
-      heading: "Nedgångslucka Akterruff Maxi 95",
-      text: "2 790:- Plexiglas PMMA Rökfärgad 7C83 8mm. Med ventilationsgaller på båda sidor",
+      heading: "Nedgångslucka Akterruff Maxi 95 - 2 790:-",
+      text: "Plexiglas PMMA Rökfärgad 7C83 8mm. Med ventilationsgaller på båda sidor",
     },
     {
       heading: "Beställning & leverans",
-      text: "Beställ via mejl: info@navolt.se eller via Navolt.se/kontakt. Finns för avhämtning på Hälsö. Kan skickas",
+      text: "Beställ via mejl: info@navolt.se eller via Navolt.se/kontakt.\nFinns för avhämtning på Hälsö. Kan skickas",
     }
   ];
 
@@ -75,19 +76,21 @@ export default function Batrutor() {
       />
       <div className="relative w-full ] flex-col items-center py-6 gap-4 flex justify-center z-60">
         <h1 className="text-white text-center text-[18px]  px-10 lg:text-[24px]  font-semibold">
-          Vi har, tillsammans med Sika, utvecklat en metod för att limma
-          utanpåliggande båtrutor helt utan skruvar. Detta ger en tät och
-          hållbar montering som håller i många år. Monteringsanvisning för
-          metoden hittar du [här]
+        BÅTRUTOR OCH MONTERINGSPAKET
         </h1>
         <p className="text-white text-center lg:px-10 px-4 text-sm ">
-          Vi erbjuder kompletta rutpaket tillsammans med skräddarsydda
-          monteringspaket anpassade efter din båttyp. Just nu har vi lösningar
-          för följande modeller:
+        Vi erbjuder kompletta rutpaket tillsammans med skräddarsydda monteringspaket anpassade efter din båttyp.
         </p>
         <div className="relative w-full flex-col bg-black lg:p-6 p-4 bg-opacity-50 backdrop-blur-sm py-6 gap-4 flex justify-center z-60">
+          <div className="text-white gap-4 flex flex-col ">
+            <h2 className="text-[20px]">Vi har, tillsammans med Sika, utvecklat en metod för att limma utanpåliggande båtrutor helt utan skruvar. Detta ger en tät och hållbar montering som håller i många år.
+            </h2>
+            <p className="text-[14px]">Just nu har vi lösningar för följande modeller:</p>
+          </div>
+        </div>
+        <div className="relative w-full flex-col bg-black lg:p-6 p-4 bg-opacity-50 backdrop-blur-sm py-6 gap-4 flex justify-center z-60">
           <div className="text-white flex flex-col ">
-            <h2 className="text-[18px]">Rutpaket & monteringspaket</h2>
+            <h3 className="text-[18px]">Rutpaket & monteringspaket</h3>
             <div className="flex justify-between lg:flex-row flex-col w-full gap-4">
               <div className="relative lg:w-2/3 w-full  flex-col m py-6 gap-4 flex  z-60">
                 {texts.map((text, index) => (
@@ -95,7 +98,7 @@ export default function Batrutor() {
                     <div className="flex items-center gap-2">
                       <h2 className="text-[18px]">{text.heading}</h2>
                     </div>
-                    <p className="text-[14px]">{text.text}</p>
+                    <p className="text-[14px] whitespace-pre-line">{text.text}</p>
                   </div>
                 ))}
               </div>
@@ -119,7 +122,7 @@ export default function Batrutor() {
         </div>
         <div className="relative w-full flex-col bg-black lg:p-6 p-4 bg-opacity-50 backdrop-blur-sm py-6 gap-4 flex justify-center z-60">
           <div className="text-white flex flex-col ">
-            <h2 className="text-[18px]">Övriga produkter</h2>
+            <h4 className="text-[18px]">Övriga produkter</h4>
             <div className="flex justify-between lg:flex-row flex-col w-full gap-4">
               <div className="relative lg:w-2/3 w-full  flex-col m py-6 gap-4 flex  z-60">
                 {otherItems.map((item, index) => (
@@ -127,7 +130,7 @@ export default function Batrutor() {
                     <div className="flex items-center gap-2">
                       <h2 className="text-[18px]">{item.heading}</h2>
                     </div>
-                    <p className="text-[14px]">{item.text}</p>
+                    <p className="text-[14px] whitespace-pre-line">{item.text}</p>
                   </div>
                 ))}
               </div>
@@ -150,11 +153,20 @@ export default function Batrutor() {
           </div>
         </div>
         <div className="relative flex items-center justify-center z-[70]  mt-4">
-          <a href="mailto:info@navolt.se?subject=Beställning">
-            <Button className=" py-4 mb-4 px-8  hover:bg-white hover:scale-[1.02] text-black text-sm  uppercase font-bold bg-white rounded-full">
-              Beställning
-            </Button>
-          </a>
+        <Dialog>
+            <DialogTrigger asChild>
+              <Button className="w-fit lg:text-md text-sm hover:bg-white hover:scale-[1.02] bg-white rounded-full text-black uppercase font-bold md:py-6 py-2 px-6 md:px-8">Beställning</Button>
+            </DialogTrigger>
+            <DialogContent className="p-0 bg-[#111111] max-h-[90vh] overflow-y-auto border-none !rounded-none z-[80]">
+              <div className="h-full w-full">
+                <DialogTitle hidden>
+                  <h3>Beställning</h3>
+                </DialogTitle>
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div className="elfsight-app-c34915a5-f231-4d38-a9e2-601cf8cc8918" data-elfsight-app-lazy></div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
   BatteryFull,
+  Cable,
   Cctv,
   Fan,
   MapPinned,
@@ -9,6 +10,10 @@ import {
   Sun,
   Wifi,
 } from "lucide-react";
+import { DialogTrigger } from "@/components/ui/dialog";
+import { DialogContent } from "@/components/ui/dialog";
+import { Dialog } from "@/components/ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 export default function Campervan() {
   const texts = [
@@ -38,6 +43,16 @@ export default function Campervan() {
       icon: <Wifi className="w-8 h-8" strokeWidth={1.25} />,
     },
     {
+      heading: "Kopplingsschema",
+      text: "Vi skapar ett detaljerat kopplingsschema anpassat specifikt för dina komponenter.",
+      icon: <Cable className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
+      heading: "Konsultation",
+      text: "Vill du göra jobbet själv? Vi hjälper dig med frågor och funderingar!",
+      icon: <MessageCircleQuestion className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
       heading: "Konsultation",
       text: "Vill du göra jobbet själv? Vi hjälper dig med frågor och funderingar!",
       icon: <MessageCircleQuestion className="w-8 h-8" strokeWidth={1.25} />,
@@ -47,28 +62,34 @@ export default function Campervan() {
   const steps = [
     {
       number: "1",
-      title: "Videosamtal & planering",
+      title: "Berätta om din van",
       description:
-        "Vi bokar ett kostnadsfritt videosamtal där vi kartlägger dina förutsättningar, behov och önskemål för att ta fram ett system anpassat för din van.",
+        "Börja med att fylla i vårt formulär där du berättar om din van, dina behov och önskemål. Det hjälper oss att ta fram den bästa lösningen för dig.",
     },
     {
       number: "2",
-      title: "Skräddarsytt system",
+      title: "Videosamtal & planering",
+      description:
+        "Vi bokar ett kostnadsfritt videosamtal där vi går igenom din information och säkerställer att vi designar ett system som passar dig perfekt.",
+    },
+    {
+      number: "3",
+      title: "Systemdesign",
       description:
         "Vi designar ditt elsystem och levererar antingen ett färdigt DIY-kit med alla komponenter och ett tydligt kopplingsschema, eller så bokar vi en installationstid.",
     },
     {
-      number: "3",
+      number: "4",
       title: "Installation",
       description:
-        "Installera själv med ditt skräddarsydda DIY-kit eller låt oss göra det åt dig på Hälsö eller direkt",
+        "Installera själv med ditt skräddarsydda DIY-kit eller låt oss göra det åt dig på Hälsö eller direkt hos dig.",
     },
   ];
 
   return (
     <section className=" lg:px-10 px-4 flex flex-col  bg-black min-h-[calc(100vh-120px-85.9px)]">
       <div
-        className="absolute inset-0 z-0 bg-[url('../public/img/startpage-2.jpg')] bg-cover bg-top brightness-50"
+        className="absolute inset-0 z-0 bg-[url('../public/img/startpage-2.jpg')] bg-cover bg-bottom brightness-50"
         role="img"
         aria-label="landing-image"
       />
@@ -110,12 +131,21 @@ export default function Campervan() {
             ))}
           </div>
         </div>
-        <div className="relative flex items-center justify-center z-[70]  mt-4">
-          <a href="mailto:info@navolt.se">
-            <Button className=" py-4 mb-4 px-8  hover:bg-white hover:scale-[1.02] text-black text-sm  uppercase font-bold bg-white rounded-full">
-              Boka videosamtal
-            </Button>
-          </a>
+        <div className="relative flex h-fit-content items-center justify-center z-[70] mt-4">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button className="w-fit lg:text-md text-sm hover:bg-white hover:scale-[1.02] bg-white rounded-full text-black uppercase font-bold md:py-6 py-2 px-6 md:px-8">Berätta om din van</Button>
+            </DialogTrigger>
+            <DialogContent className="p-0 bg-[#111111] max-h-[90vh] overflow-y-auto border-none !rounded-none z-[80]">
+              <div className="h-full w-full">
+                <DialogTitle hidden>
+                  <h3>Berätta om din van</h3>
+                </DialogTitle>
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div className="elfsight-app-4daba287-9bb2-4f97-8c90-9b215ae72512" data-elfsight-app-lazy></div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
       <h5 className="text-white !z-70 relative mb-4 text-center text-[18px] px-10 lg:text-[24px] font-semibold z-60">
@@ -132,7 +162,7 @@ export default function Campervan() {
           </div>
         ))}
       </div>
-      <div className="relative flex items-center justify-center z-[70] lg:mt-8 mt-4 mb-4">
+      <div className="relative mb-14 flex items-center justify-center z-[70] lg:mt-8 mt-4">
         <Link href="/kontakt">
           <Button className=" py-4 mb-4 px-8  hover:bg-white hover:scale-[1.02] text-black text-sm  uppercase font-bold bg-white rounded-full">
             Kontakta oss
