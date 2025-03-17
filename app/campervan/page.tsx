@@ -9,6 +9,7 @@ import {
   MessageCircleQuestion,
   Sun,
   Wifi,
+  Wrench,
 } from "lucide-react";
 import { DialogTrigger } from "@/components/ui/dialog";
 import { DialogContent } from "@/components/ui/dialog";
@@ -48,9 +49,9 @@ export default function Campervan() {
       icon: <Cable className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
-      heading: "Konsultation",
-      text: "Vill du göra jobbet själv? Vi hjälper dig med frågor och funderingar!",
-      icon: <MessageCircleQuestion className="w-8 h-8" strokeWidth={1.25}/>
+      heading: "Systemdesign",
+      text: "Vi hjälper dig att designa ditt elsystem från grunden, anpassat efter dina förutsättningar, behov och önskemål.",
+      icon: <Wrench className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
       heading: "Konsultation",

@@ -6,15 +6,22 @@ import Link from "next/link";
 export default function Page() {
   return (
     <section className="min-h-[calc(100dvh-79px)] bg-black flex flex-col items-center justify-center md:min-h-[calc(100vh-94px)]">
-      <div 
+      <div
         className="absolute inset-0 z-0 bg-[url('../public/img/pexels-pixabay-275637.jpg')] bg-cover bg-right-bottom brightness-50"
         role="img"
         aria-label="landing-image"
       />
       <div className="relative w-full mb-[250px] px-6 flex-col items-center py-10 gap-4 flex justify-center z-60">
-        <h1 className="text-white md:text-[56px] text-center text-[36px] font-semibold uppercase">
-          Kontakta oss
-        </h1>
+        <div className="relative w-fit flex-col bg-black   bg-opacity-50 backdrop-blur-sm  gap-4 flex justify-center z-60">
+          <script
+            src="https://static.elfsight.com/platform/platform.js"
+            async
+          ></script>
+          <div
+            className="elfsight-app-322a1d8b-3a1b-4861-8c74-c1ef70683350"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
         <div className="flex md:flex-row flex-col gap-4">
           <Link
             href="tel:0730254555"

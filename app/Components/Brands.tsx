@@ -17,7 +17,7 @@ import ISOTEMP from "@/public/icons/brands/Isotemp.png";
 import ISOTHERM from "@/public/icons/brands/Isotherm.png";
 import SIKA from "@/public/icons/brands/Sika.png";
 import FUSION from "@/public/icons/brands/Fusion.png";
-import MASTERVOLT from "@/public/icons/brands/Mastervolt.png";
+import MASTERVOLT from "@/public/icons/brands/Mastervolt-NY.png";
 import NORDMAX from "@/public/icons/brands/Nordmax.png";
 import RENOGY from "@/public/icons/brands/Renogy.png";
 const brands = [
@@ -26,22 +26,22 @@ const brands = [
     { name: "Blue Sea Systems", logo: BLUESEA },
     { name: "Dometic", logo: DOMETIC },
     { name: "Eberspächer", logo: EBERSPACHER },
+    { name: "Fusion", logo: FUSION },
     { name: "Garmin", logo: GARMIN },
     { name: "Isotemp", logo: ISOTEMP },
     { name: "Isotherm", logo: ISOTHERM },
     { name: "Lowrance", logo: LOWRANCE },
+    { name: "Mastervolt", logo: MASTERVOLT },
     { name: "Nexa", logo: NEXA },
+    { name: "Nordmax", logo: NORDMAX },
     { name: "Raymarine", logo: RAYMARINE },
+    { name: "Renogy", logo: RENOGY },
     { name: "Simrad", logo: SIMRAD },
+    { name: "Sika", logo: SIKA },
     { name: "Skyllermarks", logo: SKYLLERMARKS },
     { name: "Sutars", logo: SUTARS },
     { name: "Teltonika", logo: TELTONIKA },
-    { name: "Victron Energy", logo: VICTRON },
-    { name: "Sika", logo: SIKA },
-    { name: "Fusion", logo: FUSION },
-    { name: "Mastervolt", logo: MASTERVOLT },
-    { name: "Nordmax", logo: NORDMAX },
-    { name: "Renogy", logo: RENOGY },
+    { name: "Victron Energy", logo: VICTRON }
 ];
 
 export default function Brands() {
