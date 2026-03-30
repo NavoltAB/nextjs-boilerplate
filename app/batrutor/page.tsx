@@ -18,7 +18,7 @@ export default function Batrutor() {
     },
     {
       heading: "Maxi 95 - 8 490:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 3+3 st.\nMonteringspaket: 2 780:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 4+4 st enl. mått: 1155x224 mm, 1070x270 mm, 807x265 mm, 829x143 mm.\nMonteringspaket: 2 780:-",
     },
     {
       heading: "Maxi 87 - 5 290:-",
