@@ -13,28 +13,32 @@ import {
 export default function Batrutor() {
   const texts = [
     {
-      heading: "Maxi 95 - 7 890:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 4+4 st enl. mått: 1155x224 mm, 1070x270 mm, 807x265 mm, 829x143 mm.\nMonteringspaket: 2 590:-",
+      heading: "Maxim 26 - 8 790:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 3+3 st.\nMonteringspaket: 2 990:-",
+    },
+    {
+      heading: "Maxi 95 - 8 490:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 3+3 st.\nMonteringspaket: 2 780:-",
     },
     {
       heading: "Maxi 87 - 5 290:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 2+2 st enl. mått: 1063x252 mm, 1069x229 mm.\nMonteringspaket: 2 250:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 2+2 st enl. mått: 1063x252 mm, 1069x229 mm.\nMonteringspaket: 2 440:-",
     },
     {
       heading: "Maxi 84 - 5 290:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1972x253 mm.\nMonteringspaket: 1 990:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1972x253 mm.\nMonteringspaket: 2 180:-",
     },
     {
       heading: "Maxi 77 - 5 290:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. Alternativ 1: 1+1 st enl. mått: 1962x240 mm. Alternativ 2: 2+2 st enl. mått: 1096x235 mm, 819x215 mm.\nMonteringspaket: 1 990:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. Alternativ 1: 1+1 st enl. mått: 1962x240 mm. Alternativ 2: 2+2 st enl. mått: 1096x235 mm, 819x215 mm.\nMonteringspaket: 2 180:-",
     },
     {
       heading: "Maxi 68 - 4 090:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1464x215 mm.\nMonteringspaket: 1 990:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1464x215 mm.\nMonteringspaket: 2 180:-",
     },
     {
       heading: "Maxi Fenix - 4 190:-",
-      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1363x262 mm.\nMonteringspaket: 1 990:-",
+      text: "Sidorutor i polykarbonat UV Bronze 130, 6mm. 1+1 st enl. mått: 1363x262 mm.\nMonteringspaket: 2 180:-",
     },
   ];
 
@@ -67,7 +71,7 @@ export default function Batrutor() {
     {
       quantity: "1st",
       name: "Sika Primer 207",
-      description: "Svart 100ML",
+      description: "Svart 250ML",
     },
     {
       quantity: "1st",
@@ -76,7 +80,7 @@ export default function Batrutor() {
     },
     {
       quantity: "250ml",
-      name: "Sika Cleaner P C68",
+      name: "Isopropanol",
       description: "**",
     },
     {
@@ -115,7 +119,7 @@ export default function Batrutor() {
     note1:
       "*Mängd Sikasil SG-20 och Sika Spacer Tape anpassas efter dina behov",
     note2:
-      "**Sika Cleaner P (isopropanol) kan tyvärr inte skickas. Priset justeras därefter och du behöver inhandla detta på egen hand. Finns på tex Kjell & Company",
+      "**Isopropanol kan tyvärr inte skickas. Priset justeras därefter och du behöver inhandla detta på egen hand. Finns på tex Kjell & Company",
   } as const;
 
   return (
@@ -234,7 +238,7 @@ export default function Batrutor() {
                     <p className="!antialiased">{montageNotes.note2}</p>
                   </div>
                   <p className="!antialiased">
-                    Fogspruta ingår ej, kan köpas till för 79:-
+                    Fogspruta ingår ej, kan köpas till för 99:-
                   </p>
                 </div>
                 <script
