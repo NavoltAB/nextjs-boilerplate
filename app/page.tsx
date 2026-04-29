@@ -45,20 +45,18 @@ export default function Home() {
                 Båt
               </Button>
             </Link>
-
             <Link href="/campervan">
-              <Button
-                className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full"
-            
-            >
-              Campervan
+              <Button className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full">
+                Campervan
+              </Button>
+            </Link>
+            <Link href="/motorservice">
+              <Button className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full">
+                Motorservice
               </Button>
             </Link>
             <Link href="/batrutor">
-              <Button
-                className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full"
-            
-            >
+              <Button className="md:py-7 py-4 px-8 md:px-10 hover:bg-white hover:scale-[1.02] text-black text-sm md:text-lg uppercase font-bold bg-white rounded-full">
                 Båtrutor
               </Button>
             </Link>

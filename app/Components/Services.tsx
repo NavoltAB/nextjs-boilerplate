@@ -60,6 +60,19 @@ export default function Services() {
           </Dialog>
         </div>
       </div>
+      <div className="h-[calc(100vh-400px)] w-full relative">
+        <div className="bg-[url('../public/img/motor.jpg')] bg-cover bg-center brightness-50 absolute inset-0" />
+        <div className="relative h-full flex flex-col justify-center lg:items-start items-center px-4 lg:px-10 text-white">
+          <h3 className="text-3xl md:text-4xl text-center lg:text-start font-semibold mb-4">
+            MOTORSERVICE & FELSÖKNING
+          </h3>
+          <Link href="/motorservice">
+            <Button className="w-fit lg:text-md text-sm hover:bg-white hover:scale-[1.02] bg-white rounded-full text-black uppercase font-bold md:py-6 py-2 px-6 md:px-8">
+              Visa mer
+            </Button>
+          </Link>
+        </div>
+      </div>
     </section>
   );
 }

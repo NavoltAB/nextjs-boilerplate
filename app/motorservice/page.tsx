@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { ClipboardCheck, Snowflake, Wrench, Zap } from "lucide-react";
 
 export default function Motorservice() {
@@ -57,7 +62,7 @@ export default function Motorservice() {
   return (
     <section className="lg:px-10 px-4 flex flex-col bg-black min-h-[calc(100vh-120px-85.9px)]">
       <div
-        className="absolute inset-0 z-0 bg-[url('../public/img/startpage-3.jpg')] bg-cover bg-center brightness-50"
+        className="absolute inset-0 z-0 bg-[url('../public/img/motor.jpg')] bg-cover bg-center brightness-50"
         role="img"
         aria-label="landing-image"
       />
