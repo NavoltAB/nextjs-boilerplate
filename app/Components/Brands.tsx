@@ -20,47 +20,59 @@ import FUSION from "@/public/icons/brands/Fusion.png";
 import MASTERVOLT from "@/public/icons/brands/Mastervolt-NY.png";
 import NORDMAX from "@/public/icons/brands/Nordmax.png";
 import RENOGY from "@/public/icons/brands/Renogy.png";
+import LEWMAR from "@/public/icons/brands/Lewmar.png";
+import Quick from "@/public/icons/brands/Quick.png";
+import Sleipner from "@/public/icons/brands/Sleipner.jpg";
+import SKANBAT from "@/public/icons/brands/Skanbatt.jpg";
 const brands = [
-    { name: "B&G", logo: BG },
-    { name: "BEP", logo: BEP },
-    { name: "Blue Sea Systems", logo: BLUESEA },
-    { name: "Dometic", logo: DOMETIC },
-    { name: "Eberspächer", logo: EBERSPACHER },
-    { name: "Fusion", logo: FUSION },
-    { name: "Garmin", logo: GARMIN },
-    { name: "Isotemp", logo: ISOTEMP },
-    { name: "Isotherm", logo: ISOTHERM },
-    { name: "Lowrance", logo: LOWRANCE },
-    { name: "Mastervolt", logo: MASTERVOLT },
-    { name: "Nexa", logo: NEXA },
-    { name: "Nordmax", logo: NORDMAX },
-    { name: "Raymarine", logo: RAYMARINE },
-    { name: "Renogy", logo: RENOGY },
-    { name: "Simrad", logo: SIMRAD },
-    { name: "Sika", logo: SIKA },
-    { name: "Skyllermarks", logo: SKYLLERMARKS },
-    { name: "Sutars", logo: SUTARS },
-    { name: "Teltonika", logo: TELTONIKA },
-    { name: "Victron Energy", logo: VICTRON }
+  { name: "B&G", logo: BG },
+  { name: "BEP", logo: BEP },
+  { name: "Blue Sea Systems", logo: BLUESEA },
+  { name: "Dometic", logo: DOMETIC },
+  { name: "Eberspächer", logo: EBERSPACHER },
+  { name: "Fusion", logo: FUSION },
+  { name: "Garmin", logo: GARMIN },
+  { name: "Isotemp", logo: ISOTEMP },
+  { name: "Isotherm", logo: ISOTHERM },
+  { name: "Lowrance", logo: LOWRANCE },
+  { name: "Mastervolt", logo: MASTERVOLT },
+  { name: "Nexa", logo: NEXA },
+  { name: "Nordmax", logo: NORDMAX },
+  { name: "Raymarine", logo: RAYMARINE },
+  { name: "Renogy", logo: RENOGY },
+  { name: "Simrad", logo: SIMRAD },
+  { name: "Sika", logo: SIKA },
+  { name: "Skyllermarks", logo: SKYLLERMARKS },
+  { name: "Sutars", logo: SUTARS },
+  { name: "Teltonika", logo: TELTONIKA },
+  { name: "Victron Energy", logo: VICTRON },
+  { name: "Lewmar", logo: LEWMAR, imageClassName: "scale-[1.5]" },
+  { name: "Quick", logo: Quick },
+  { name: "Sleipner", logo: Sleipner },
+  { name: "Skanbat", logo: SKANBAT },
 ];
 
 export default function Brands() {
-    return (
-        <section className="py-16  px-4 md:px-10">
-            <h4 className="text-2xl md:text-4xl font-semibold text-center uppercase mb-12">Våra varumärken</h4>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
-                {brands.map((brand) => (
-                    <div key={brand.name} className="w-full max-w-[200px] h-[100px] relative flex items-center justify-center">
-                        <Image
-                            src={brand.logo}
-                            alt={`${brand.name} logo`}
-                            className="object-contain transition-all duration-300"
-                            fill
-                        />
-                    </div>
-                ))}
-            </div>
-        </section>
-    );
+  return (
+    <section className="py-16  px-4 md:px-10">
+      <h4 className="text-2xl md:text-4xl font-semibold text-center uppercase mb-12">
+        Våra varumärken
+      </h4>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
+        {brands.map((brand) => (
+          <div
+            key={brand.name}
+            className="w-full max-w-[200px] h-[100px] relative flex items-center justify-center"
+          >
+            <Image
+              src={brand.logo}
+              alt={`${brand.name} logo`}
+              className={`object-contain transition-all duration-300 ${brand.imageClassName ?? ""}`}
+              fill
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
-

@@ -15,6 +15,7 @@ export default function Navbar() {
   const menuItems = [
     { text: "Hem", link: "/" },
     { text: "Båt", link: "/bat" },
+    { text: "Motorservice", link: "/motorservice" },
     { text: "Campervan", link: "/campervan" },
     { text: "Båtrutor", link: "/batrutor" },
     { text: "Galleri", link: "/galleri" },
@@ -34,12 +35,12 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <div className="w-1/3 hidden md:flex text-white justify-end flex-row gap-6">
+      <div className="hidden md:flex text-white justify-end flex-row gap-4 lg:gap-6">
         {menuItems.map((item, index) => (
           <Link
             key={index}
             href={item.link}
-            className="text-white text-[18px] antialiased  hover:text-gray-400"
+            className="text-white text-[15px] lg:text-[18px] antialiased hover:text-gray-400"
           >
             {item.text}
           </Link>

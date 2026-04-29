@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BatteryFull, Cable, Cctv, Fan, MapPinned, MessageCircleQuestion, Sun, Wifi, Wrench } from "lucide-react";
+import { Anchor, BatteryCharging, BatteryFull, Cable, Cctv, Fan, MapPinned, MessageCircleQuestion, Sun, Wifi, Wrench, Zap } from "lucide-react";
 import Link from "next/link";
 
 export default function Bat() {
@@ -26,6 +26,11 @@ export default function Bat() {
       icon: <MapPinned className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
+      heading: "Laddning",
+      text: "Vi ser till att din laddning fungerar optimalt från landström, generator och solceller. Vi installerar allt från enstaka enheter till kompletta Victron-system med laddare/inverter.",
+      icon: <BatteryCharging className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
       heading: "Kyla/Värme",
       text: "Vi installerar kylskåp/-boxar, varmvattenberedare och dieselvärmare.",
       icon: <Fan className="w-8 h-8" strokeWidth={1.25}/>
@@ -39,6 +44,16 @@ export default function Bat() {
       heading: "Kopplingsschema",
       text: "Vi skapar ett detaljerat kopplingsschema anpassat specifikt för dina komponenter.",
       icon: <Cable className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
+      heading: "Ankarspel",
+      text: "Vi hjälper dig med installation av ankarspel, anpassat efter din båt och dina behov. Vi arbetar med Sleipner, Lewmar och Quick/Balder.",
+      icon: <Anchor className="w-8 h-8" strokeWidth={1.25}/>
+    },
+    {
+      heading: "Elwinch",
+      text: "Tungt att skota? Med en elwinch trimmar du enkelt seglen med ett knapptryck.",
+      icon: <Zap className="w-8 h-8" strokeWidth={1.25}/>
     },
     {
       heading: "Konsultation",

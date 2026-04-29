@@ -68,6 +68,16 @@ export default function Home() {
       <Services />
       <Insta />
       <Brands />
+      <section className="py-16 px-4 md:px-10">
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          async
+        ></script>
+        <div
+          className="elfsight-app-cb71a3bb-2e76-475b-9681-437157e214be"
+          data-elfsight-app-lazy
+        ></div>
+      </section>
     </section>
   );
 }
