@@ -1,3 +1,5 @@
+import Image from "next/image";
+import MotorserviceImg from "../../public/img/motorservice.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -60,11 +62,13 @@ export default function Motorservice() {
   ];
 
   return (
-    <section className="lg:px-10 px-4 flex flex-col bg-black min-h-[calc(100vh-120px-85.9px)]">
-      <div
-        className="absolute inset-0 z-0 bg-[url('../public/img/motor.jpg')] bg-cover bg-center brightness-50"
-        role="img"
-        aria-label="landing-image"
+    <section className="relative lg:px-10 px-4 flex flex-col bg-black min-h-[calc(100vh-120px-85.9px)]">
+      <Image
+        src={MotorserviceImg}
+        alt="motorservice hero"
+        fill
+        className="object-cover brightness-50 z-0"
+        priority
       />
       <div className="relative w-full flex-col items-center py-10 gap-4 flex justify-center z-60">
         <h1 className="text-white text-center lg:text-[32px] px-10 text-[24px] font-semibold uppercase">

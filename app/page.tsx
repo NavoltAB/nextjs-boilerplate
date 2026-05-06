@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import HeroImg from "../public/img/hero-img.jpg";
+import HeroImg from "../public/img/motorservice.jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Services from "./Components/Services";
@@ -25,12 +25,12 @@ export default function Home() {
   return (
     <section className="w-full h-full">
       <div className="relative md:h-[calc(100vh-94px)] h-[calc(100dvh-79px)]">
-          <Image
-            objectFit="cover"
-            src={HeroImg}
-            alt="hero-image"
-            className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full sm:scale-x-[-1] scale-x-100"
-          />
+        <Image
+          objectFit="cover"
+          src={HeroImg}
+          alt="hero-image"
+          className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full sm:scale-x-[-1] scale-x-100"
+        />
         <div className="relative [&>*]:text-white gap-4 max-h-[calc(100vh-78px)] flex items-center md:items-start px-4 lg:px-10 h-full flex-col justify-center">
           <h1 className="text-[32px] md:text-[56px] text-center antialiased leading-[32px] md:leading-[56px] uppercase font-semibold">
             Vi löser elen ombord
