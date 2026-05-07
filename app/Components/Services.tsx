@@ -61,7 +61,7 @@ export default function Services() {
         </div>
       </div>
       <div className="h-[calc(100vh-400px)] w-full relative">
-        <div className="bg-[url('../public/img/motor.jpg')] bg-cover bg-center brightness-50 absolute inset-0" />
+        <div className="bg-[url('../public/img/motorservice.jpg')] bg-cover bg-center brightness-50 absolute inset-0" />
         <div className="relative h-full flex flex-col justify-center lg:items-start items-center px-4 lg:px-10 text-white">
           <h3 className="text-3xl md:text-4xl text-center lg:text-start font-semibold mb-4">
             MOTORSERVICE & FELSÖKNING

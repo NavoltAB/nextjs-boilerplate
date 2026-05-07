@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import HeroImg from "../public/img/motorservice.jpg";
+import HeroImg from "../public/img/hero-img.jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Services from "./Components/Services";
