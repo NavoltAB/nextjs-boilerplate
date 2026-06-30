@@ -1,7 +1,13 @@
-import KontaktImg from "@/public/img/pexels-pixabay-275637.jpg";
+import type { Metadata } from "next";
 import { Mail, MapPinHouse, Phone } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Kontakta oss – marinelektriker i Göteborg/Öckerö",
+  description:
+    "Kontakta Navolt AB för marinelektronik i Göteborg och Öckerö. Ring, mejla eller besök oss på Hälsö – vi hjälper dig med elen ombord.",
+  alternates: { canonical: "/kontakt" },
+};
 
 export default function Page() {
   return (
@@ -12,13 +18,9 @@ export default function Page() {
         aria-label="landing-image"
       />
       <div className="relative w-full mb-[250px] px-6 flex-col items-center py-10 gap-4 flex justify-center z-60">
-        <div className="relative w-fit flex-col bg-black   bg-opacity-50 backdrop-blur-sm  gap-4 flex justify-center z-60">
-          <script
-            src="https://static.elfsight.com/platform/platform.js"
-            async
-          ></script>
+        <div className="relative w-fit flex-col gap-4 flex justify-center z-60">
           <div
-            className="elfsight-app-322a1d8b-3a1b-4861-8c74-c1ef70683350"
+            className="elfsight-app-322a1d8b-3a1b-4861-8c74-c1ef70683350 p-4 md:p-8 rounded-lg bg-black bg-opacity-50 backdrop-blur-sm empty:hidden"
             data-elfsight-app-lazy
           ></div>
         </div>

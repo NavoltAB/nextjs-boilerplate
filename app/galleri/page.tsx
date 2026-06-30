@@ -1,3 +1,12 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Galleri – våra installationer och referensjobb",
+  description:
+    "Se exempel på våra installationer av marinelektronik, elsystem, solceller och litiumbatterier i båt och campervan. Navolt i Göteborg/Öckerö.",
+  alternates: { canonical: "/galleri" },
+};
+
 export default function Galleri() {
   return (
     <section className=" flex flex-col  bg-black min-h-[calc(100vh-79px)] md:min-h-[calc(100vh-120px-85.9px)]">
@@ -7,10 +16,6 @@ export default function Galleri() {
         aria-label="landing-image"
       />
       <div className="max-w-[100vw]">
-        <script
-          src="https://static.elfsight.com/platform/platform.js"
-          async
-        ></script>
         <div
           className="elfsight-app-72c6d581-a169-4bb8-b299-3cabbd529a10"
           data-elfsight-app-lazy

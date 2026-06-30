@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +10,13 @@ import {
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog";
+
+export const metadata: Metadata = {
+  title: "Båtrutor – byte och montering av rutor till båt",
+  description:
+    "Vi hjälper dig med båtrutor – byte, tillverkning och montering av rutor till din båt. Kontakta Navolt i Göteborg/Öckerö.",
+  alternates: { canonical: "/batrutor" },
+};
 
 export default function Batrutor() {
   const texts = [
@@ -199,10 +207,6 @@ export default function Batrutor() {
                 <DialogTitle hidden>
                   <h3>Beställning</h3>
                 </DialogTitle>
-                <script
-                  src="https://static.elfsight.com/platform/platform.js"
-                  async
-                ></script>
                 <div
                   className="elfsight-app-c34915a5-f231-4d38-a9e2-601cf8cc8918"
                   data-elfsight-app-lazy
@@ -241,10 +245,6 @@ export default function Batrutor() {
                     Fogspruta ingår ej, kan köpas till för 99:-
                   </p>
                 </div>
-                <script
-                  src="https://static.elfsight.com/platform/platform.js"
-                  async
-                ></script>
                 <div
                   className="elfsight-app-a74e85ad-769a-455d-8c9d-da2741f37b86"
                   data-elfsight-app-lazy
@@ -254,18 +254,10 @@ export default function Batrutor() {
           </div>
         </div>
         <div className="relative w-full flex-col bg-black lg:p-6 p-4 bg-opacity-50 backdrop-blur-sm py-6 gap-4 flex justify-center z-60">
-          <script
-            src="https://static.elfsight.com/platform/platform.js"
-            async
-          ></script>
           <div
             className="elfsight-app-81bee96e-329a-48e1-be15-239304c627d9"
             data-elfsight-app-lazy
           ></div>
-          <script
-            src="https://static.elfsight.com/platform/platform.js"
-            async
-          ></script>
           <div
             className="elfsight-app-77e18350-628e-45de-a626-2371c216bced"
             data-elfsight-app-lazy
@@ -284,10 +276,6 @@ export default function Batrutor() {
               <DialogTitle hidden>
                 <h3>Beställning</h3>
               </DialogTitle>
-              <script
-                src="https://static.elfsight.com/platform/platform.js"
-                async
-              ></script>
               <div
                 className="elfsight-app-c34915a5-f231-4d38-a9e2-601cf8cc8918"
                 data-elfsight-app-lazy

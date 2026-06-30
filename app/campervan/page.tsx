@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import {
@@ -15,6 +16,13 @@ import { DialogTrigger } from "@/components/ui/dialog";
 import { DialogContent } from "@/components/ui/dialog";
 import { Dialog } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
+
+export const metadata: Metadata = {
+  title: "Elsystem till campervan & husbil – solceller & litium",
+  description:
+    "Skräddarsytt elsystem i din campervan eller husbil: solceller, litiumbatterier, laddning och övervakning. Fordons- och marinelektronik i Göteborg.",
+  alternates: { canonical: "/campervan" },
+};
 
 export default function Campervan() {
   const texts = [
@@ -144,10 +152,6 @@ export default function Campervan() {
                 <DialogTitle hidden>
                   <h3>Berätta om din van</h3>
                 </DialogTitle>
-                <script
-                  src="https://static.elfsight.com/platform/platform.js"
-                  async
-                ></script>
                 <div
                   className="elfsight-app-4daba287-9bb2-4f97-8c90-9b215ae72512"
                   data-elfsight-app-lazy

@@ -1,5 +1,4 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import HeroImg from "../public/img/hero-img.jpg";
 import Link from "next/link";
@@ -8,27 +7,21 @@ import Services from "./Components/Services";
 import Brands from "./Components/Brands";
 import Insta from "./Components/Insta";
 
+export const metadata: Metadata = {
+  title: { absolute: "Marinelektronik & båtel i Göteborg | Navolt AB" },
+  description:
+    "Felsökning, uppgradering och nyinstallation av el och elektronik i båt, husbil och campervan. Marinelektronik i Göteborg/Öckerö – kontakta oss!",
+  alternates: { canonical: "/" },
+};
+
 export default function Home() {
-  const scrollToServices = () => {
-    const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
-    const scrollPosition = isMobile
-      ? windowHeight - 79
-      : document.documentElement.scrollHeight - windowHeight;
-
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <section className="w-full h-full">
       <div className="relative md:h-[calc(100vh-94px)] h-[calc(100dvh-79px)]">
         <Image
-          objectFit="cover"
           src={HeroImg}
-          alt="hero-image"
+          alt="Marinelektronik och elinstallation i båt – Navolt i Göteborg/Öckerö"
+          priority
           className="brightness-75 absolute -top-[94px] h-[calc(100%+94px)] min-h-[calc(100%+94px)] object-cover w-full sm:scale-x-[-1] scale-x-100"
         />
         <div className="relative [&>*]:text-white gap-4 max-h-[calc(100vh-78px)] flex items-center md:items-start px-4 lg:px-10 h-full flex-col justify-center">
@@ -67,10 +60,6 @@ export default function Home() {
       <Insta />
       <Brands />
       <section className="py-16 px-4 md:px-10">
-        <script
-          src="https://static.elfsight.com/platform/platform.js"
-          async
-        ></script>
         <div
           className="elfsight-app-cb71a3bb-2e76-475b-9681-437157e214be"
           data-elfsight-app-lazy

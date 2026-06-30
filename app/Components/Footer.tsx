@@ -22,12 +22,12 @@ const socialMedia = [
   return (
     <section className="flex bg-black absolute bottom-0 flex-col bg-opacity-50 backdrop-blur-lg  gap-4 !z-40 md:px-6 px-4 py-4 justify-center md:py-6 w-full items-center">
       <div className="flex flex-col justify-center w-full items-center">
-        <h1 className="leading-[26px]  text-white text-[26px] antialiased font-semibold uppercase">
+        <span className="block leading-[26px]  text-white text-[26px] antialiased font-semibold uppercase">
           Navolt
-        </h1>
-        <h3 className="text-[9px]  antialiased text-white uppercase">
+        </span>
+        <span className="block text-[9px]  antialiased text-white uppercase">
           Marinelektronik
-        </h3>
+        </span>
       </div>
       <div className="!text-white md:mt-auto flex flex-col md:flex-row md:w-4/5 justify-end h-fit  md:justify-center md:gap-8 text-center md:items-end">
         <p className="md:text-xs antialiased text-[12px]">

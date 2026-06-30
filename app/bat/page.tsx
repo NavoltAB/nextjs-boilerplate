@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Anchor, BatteryCharging, BatteryFull, Cable, Cctv, Fan, MapPinned, MessageCircleQuestion, Sun, Wifi, Wrench, Zap } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Elsystem & elektronik till båt – solceller, litium, Victron",
+  description:
+    "Vi installerar solceller, litiumbatterier, navigation (AIS, plotter, radar) och kompletta Victron-system i din fritidsbåt. Båtelektriker i Göteborg.",
+  alternates: { canonical: "/bat" },
+};
 
 export default function Bat() {
 

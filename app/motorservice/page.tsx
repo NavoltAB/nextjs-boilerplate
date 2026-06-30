@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import MotorserviceImg from "../../public/img/motorservice.jpg";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,13 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { ClipboardCheck, Snowflake, Wrench, Zap } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Motorservice & felsökning för båtmotorer i Göteborg",
+  description:
+    "Service, felsökning och vinterkonservering av inombordsmotorer – diesel och bensin, på plats hos dig. Navolt i Göteborg/Öckerö.",
+  alternates: { canonical: "/motorservice" },
+};
 
 export default function Motorservice() {
   const categories = [
@@ -65,8 +73,9 @@ export default function Motorservice() {
     <section className="relative lg:px-10 px-4 flex flex-col bg-black min-h-[calc(100vh-120px-85.9px)]">
       <Image
         src={MotorserviceImg}
-        alt="motorservice hero"
+        alt="Motorservice och felsökning av båtmotor – Navolt i Göteborg/Öckerö"
         fill
+        sizes="100vw"
         className="object-cover brightness-50 z-0"
         priority
       />
@@ -119,10 +128,6 @@ export default function Motorservice() {
         </div>
       </div>
 
-      <script
-        src="https://static.elfsight.com/platform/platform.js"
-        async
-      ></script>
       <div className="relative flex items-center mb-14 justify-center z-[70] lg:mt-8 mt-4">
         <Dialog>
           <DialogTrigger asChild>

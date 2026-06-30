@@ -69,6 +69,7 @@ export default function Brands() {
               alt={`${brand.name} logo`}
               className={`object-contain transition-all duration-300 ${brand.imageClassName ?? ""}`}
               fill
+              sizes="(max-width: 768px) 50vw, 200px"
             />
           </div>
         ))}

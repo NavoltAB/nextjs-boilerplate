@@ -47,10 +47,6 @@ export default function Services() {
                 <DialogTitle hidden>
                   <h3>Berätta om din van</h3>
                 </DialogTitle>
-                <script
-                  src="https://static.elfsight.com/platform/platform.js"
-                  async
-                ></script>
                 <div
                   className="elfsight-app-508f623f-d371-4e3b-9777-6a5926970ebf"
                   data-elfsight-app-lazy
